@@ -1,0 +1,17 @@
+CARPETA DE VIDEOS
+=================
+Si quieres usar videos guardados (archivos .mp4) en vez de YouTube,
+ponlos en ESTA carpeta y registra la lección en datos.js así:
+
+  tipo: "local",
+  fuente: "videos/nombre-de-tu-video.mp4",
+  miniatura: "videos/nombre-de-tu-miniatura.jpg",   (opcional)
+
+CONSEJOS
+- Formato recomendado: MP4 (H.264 + AAC). Funciona en todos los navegadores.
+- Nombres sin espacios ni tildes: usa-guiones-asi.mp4
+- Los hostings gratis tienen límite de tamaño (Netlify, GitHub Pages ~100 MB por archivo).
+  Para videos largos o pesados es MUCHO mejor subirlos a YouTube
+  (puedes marcarlos como "No listado") y usar tipo: "youtube".
+- Los videos locales guardan el minuto donde te quedaste y se marcan
+  como completados solos al llegar al 90%.

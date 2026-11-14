@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     ARCHIVO: index.html
+     QUÉ HACE: Es el "marco" de la página: barra de arriba, zona
+     central y pie. El contenido (cursos, lecciones, tienda) lo
+     dibuja app.js usando los datos de datos.js.
+     NO necesitas editar este archivo para agregar videos.
+     ============================================================ -->
+<html lang="es">
+<head>
+  <!-- ETIQUETA: letras con tildes y ñ -->
+  <meta charset="UTF-8">
+  <!-- ETIQUETA: que se vea bien en celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- ETIQUETA: título de la pestaña y de Google -->
+  <title>Electro Academia | Aprende electrónica paso a paso</title>
+  <!-- ETIQUETA: descripción que Google muestra -->
+  <meta name="description" content="Aprende electrónica viendo cómo se hace: videos paso a paso, lista de materiales, avance guardado y kits para practicar.">
+  <!-- ETIQUETAS: vista previa al compartir el link en WhatsApp, Facebook, etc. -->
+  <meta property="og:title" content="Electro Academia">
+  <meta property="og:description" content="Aprende electrónica viendo cómo se hace. Practica y, si quieres, compra el kit.">
+  <meta property="og:type" content="website">
+  <!-- ETIQUETA: color de la barra del navegador en celular -->
+  <meta name="theme-color" content="#0b0d12">
+  <!-- ETIQUETA: ícono de la pestaña (un rayo, dibujado en el mismo código) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E⚡%3C/text%3E%3C/svg%3E">
+  <!-- Enlace a los estilos (colores y diseño) -->
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- ===== BARRA SUPERIOR ===== -->
+  <header class="barra">
+    <div class="contenedor barra__interna">
+      <a href="#/" class="logo" id="logo-nombre">Electro Academia</a>
+      <nav aria-label="Menú principal">
+        <a href="#/cursos" data-ruta="inicio">Cursos</a>
+        <a href="#/tienda" data-ruta="tienda">Tienda</a>
+        <a href="#/progreso" data-ruta="progreso">Mi progreso</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ZONA CENTRAL =====
+       Aquí app.js dibuja la pantalla que corresponda
+       (inicio, lección, tienda o progreso). -->
+  <main id="app" tabindex="-1"></main>
+
+  <!-- ===== PIE DE PÁGINA ===== -->
+  <footer class="pie">
+    <div class="contenedor" id="pie"></div>
+  </footer>
+
+  <!-- ETIQUETA: mensaje si el navegador tiene JavaScript apagado -->
+  <noscript><p style="padding:24px;text-align:center">Esta página necesita JavaScript para funcionar. Actívalo en tu navegador.</p></noscript>
+
+  <!-- ETIQUETAS DE SCRIPT (el orden importa):
+       1) datos.js trae la información, 2) app.js arma la página -->
+  <script src="datos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

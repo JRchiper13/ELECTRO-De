@@ -1,0 +1,32 @@
+ELECTRO ACADEMIA - GUÍA RÁPIDA
+==============================
+
+QUÉ CONTIENE ESTA CARPETA
+  index.html   -> el marco de la página (no hace falta editarlo)
+  estilos.css  -> colores y diseño (tema oscuro)
+  datos.js     -> TODO el contenido: cursos, lecciones, precios, tienda
+  app.js       -> la lógica (no hace falta editarlo)
+  videos/      -> opcional: videos .mp4 propios
+
+QUÉ CAMBIAR ANTES DE PUBLICAR (todo en datos.js)
+  1. CONFIG: tu número de WhatsApp (con 591 al inicio), correo y canal.
+  2. CURSOS: reemplaza los videos de ejemplo por los tuyos.
+     - id del video = lo que va después de "v=" en el link de YouTube.
+     - pasos: pon los minutos reales de tu video (formato "3:45").
+     - materiales y precios reales.
+  3. PRODUCTOS y FAQ: ajusta a lo que vendes.
+
+CÓMO SUBIRLA A INTERNET (GRATIS)
+  Opción fácil - Netlify Drop:
+    1. Entra a app.netlify.com/drop
+    2. Arrastra la CARPETA electro-academia completa.
+    3. Te da un link público al instante.
+  Otras opciones: GitHub Pages, Cloudflare Pages, Firebase Hosting.
+  Para actualizar: cambia datos.js y vuelve a subir la carpeta.
+
+IMPORTANTE
+  - El avance de cada alumno se guarda en su propio navegador
+    (no hay base de datos). Si borra los datos del navegador, se pierde.
+  - La compra es por WhatsApp: el cliente te escribe con el pedido listo.
+    El pago y la entrega los coordinas tú.
+  - Si algún video de YouTube no carga, revisa que sea público o "No listado".
